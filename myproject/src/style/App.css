@@ -1,0 +1,68 @@
+body {
+    background-color: #202020;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App {
+    width: 800px;
+  }
+
+  .post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .date {
+    position: absolute;
+    right: 0;
+    top: -30px;
+  }
+  .reaction {
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+
+  .reaction > div {
+    margin: 0 5px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .like:hover {
+    color: rgb(223, 223, 223);
+  }
+
+  .like_active {
+    color: red;
+  }
+
+  .comment:hover {
+    color: blue;
+  }
+
+  .share:hover {
+    color: green;
+  }
+
+  .likes {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }

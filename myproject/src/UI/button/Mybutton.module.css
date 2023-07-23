@@ -1,0 +1,13 @@
+.myBtn {
+    padding: 5px 20px;
+    color: teal;
+    font-size: 13px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myBtn:hover {
+    background-color: aqua;
+}
