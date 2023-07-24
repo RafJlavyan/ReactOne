@@ -53,10 +53,6 @@ body {
     color: red;
   }
 
-  .comment:hover {
-    color: blue;
-  }
-
   .share:hover {
     color: green;
   }

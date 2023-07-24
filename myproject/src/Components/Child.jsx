@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import Mybutton from '../UI/button/Mybutton'
+import Comment from '../UI/comment/Comment'
 
 const Child = (props) => {
   const [likes, setlikes] = useState(0)
-    
   
-
   return (
     <div className='post'>
         <div className="post__content">
@@ -27,10 +26,9 @@ const Child = (props) => {
           ev.target.classList.add('like_active')
         }
       }}><i className="fa-solid fa-heart"></i></div>
-      <div className="comment"><i className="fa-solid fa-comment"></i></div>
+      <Comment />
       <div className="share"><i className="fa-solid fa-share"></i></div>
     </div>
-    
   </div>
     </div>
   )
