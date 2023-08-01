@@ -12,7 +12,7 @@ const Child = (props) => {
         <p>{props.post.body}</p>
         </div>
         <div className="post__btns">
-    <Mybutton onClick = {() => console.log(' ')}>Delete</Mybutton>
+    <Mybutton onClick = {() => props.remove(props.post)}>Delete</Mybutton>
     <div className="date">{props.post.date}</div>
     <div className="likes">Likes: {likes}</div>
     <div className="reaction">
