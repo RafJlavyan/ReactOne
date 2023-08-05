@@ -2,6 +2,9 @@ import React from 'react'
 import Child from './Child'
 
 const Parent = ({posts,title,remove}) => {
+  if (!posts.length) {
+    return <h1 style={{ textAlign: "center" }}>Not Found</h1>;
+  }
   return (
     <div className='parent'>
         <h1 style={{textAlign: 'center'}}>{title}</h1>
