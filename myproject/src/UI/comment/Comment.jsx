@@ -1,10 +1,9 @@
-import React from 'react'
 import comMent from './Comment.module.css'
 
-const Comment = () => {
-    
+const Comment = ({children}) => {
+
   return (
-    <div className={comMent.comment}><i className="fa-solid fa-comment"></i></div>
+      <div className={comMent.comment} style={{transition:'0.3s'}}>{children}</div>
   )
 }
 

@@ -17,7 +17,6 @@ const Child = (props) => {
     <div className="likes">Likes: {likes}</div>
     <div className="reaction">
       <div className="like" onClick={(ev) => {
-        
         if(ev.target.classList.contains('like_active')) {
           setlikes(likes-1) 
           ev.target.classList.remove('like_active')
@@ -25,8 +24,9 @@ const Child = (props) => {
           setlikes(likes+1) 
           ev.target.classList.add('like_active')
         }
-      }}><i className="fa-solid fa-heart"></i></div>
-      <Comment />
+      }}><i className="fa-solid fa-heart"></i>
+      </div>
+        <Comment ><i class="fa-solid fa-comment"></i></Comment>
       <div className="share"><i className="fa-solid fa-share"></i></div>
     </div>
   </div>

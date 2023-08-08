@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Myinput from '../UI/input/Myinput';
 import Mybutton from "../UI/button/Mybutton";
 
-const PostForm = ({create}) => {
+const PostForm = ({create,setVisible}) => {
     const [inp, setInp] = useState (
         {
           title:'',
@@ -47,6 +47,7 @@ const PostForm = ({create}) => {
           placeholder="Post description"
         />
         <Mybutton onClick={addNewPost}>Add</Mybutton>
+        <Mybutton style={{margin: '0 0 0 10px'}} onClick={()=> setVisible(false)}>Close</Mybutton>
       </form>
     )
 }
