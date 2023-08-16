@@ -8,7 +8,7 @@ const Child = (props) => {
   return (
     <div className='post'>
         <div className="post__content">
-        <h1>{props.number}. {props.post.title}</h1>
+        <h1>{props.post.id}. {props.post.title}</h1>
         <p>{props.post.body}</p>
         </div>
         <div className="post__btns">
