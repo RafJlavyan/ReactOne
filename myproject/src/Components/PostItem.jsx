@@ -1,9 +1,9 @@
 import React from "react";
-import Mybutton from "../UI/button/Mybutton";
+import MyButton from "../UI/button/MyButton";
 import { useNavigate } from "react-router-dom";
 
 
-const Child = (props) => {
+const PostItem = (props) => {
   const navigate = useNavigate();
   const dynamicNavigation = (id) => {
     navigate(`/posts/${id}`)
@@ -17,11 +17,11 @@ const Child = (props) => {
         <p>{props.post.body}</p>
       </div>
       <div className="post_btns">
-        <Mybutton onClick={() => props.remove(props.post)}>Delete</Mybutton>
-        <Mybutton onClick={() => dynamicNavigation(props.post.id)}>Open</Mybutton>
+        <MyButton onClick={() => props.remove(props.post)}>Delete</MyButton>
+        <MyButton onClick={() => dynamicNavigation(props.post.id)}>Open</MyButton>
       </div>
     </div>
   );
 };
 
-export default Child;
+export default PostItem;

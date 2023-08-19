@@ -1,13 +1,10 @@
 .myBtn {
-    padding: 5px 20px;
+    width: 100px;
+    height: 30px;
     color: purple;
     font-size: 13px;
     background: transparent;
     border: 1px solid purple;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.myBtn:hover {
-    background-color: rgba(128, 0, 128, 0.336);
+    margin: 5px ;
 }
